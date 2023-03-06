@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel="stylesheet" type="text/css" href="Styles.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
 </head>
 
 
 <body>
+    <script src="./bundle.js"></script>
         <header>
             <div class = "logo">
-                <img src = "images/pngwing.com (1).png" alt = "My logo" width = "100" height="100">
+                <img src = "images/pngwing.com(1).png" alt = "My logo" width = "100" height="100">
                 <h1>Portfolio of a novice programmer</h1><br>
                 <p>“To iterate is human, to recurse divine.”</p>
                 <ul class = "menu">
@@ -57,44 +58,16 @@
         </section>
         <div class="social_networks">
             <p>Find me on:</p><br>
-            <a href = "https://instagram.com/meldilen?igshid=YmMyMTA2M2Y="><img src="images/pngwing.com (2).png" alt="Instagram" width = "45" height="45"></a>
-            <a href = "https://vk.com/meldilen"><img src="images/pngwing.com (3).png" alt="VK" width = "45" height="45"></a>
-            <a href = "https://t.me/meldilen24"><img src="images/pngwing.com (4).png" alt="Telegram" width = "45" height="45"></a>
+            <a href = "https://instagram.com/meldilen?igshid=YmMyMTA2M2Y="><img src="images/pngwing.com(2).png" alt="Instagram" width = "45" height="45"></a>
+            <a href = "https://vk.com/meldilen"><img src="images/pngwing.com(3).png" alt="VK" width = "45" height="45"></a>
+            <a href = "https://t.me/meldilen24"><img src="images/pngwing.com(4).png" alt="Telegram" width = "45" height="45"></a>
             <a href = "https://github.com/meldilen?tab=repositories"><img src="images/733553.png" alt="Github" width = "45" height="45"></a>
-            <a href = "mailto:dzimel55@gmail.com"><img src="images/pngwing.com (5).png" alt="Gmail" width = "48" height="42"></a>
+            <a href = "mailto:dzimel55@gmail.com"><img src="images/pngwing.com(5).png" alt="Gmail" width = "48" height="42"></a>
         </div>
         <br>
         <div class="jokeImg">
             <img id="joke">
             <figcaption id="imgInfo"></figcaption>
         </div>
-        <script>
-            function gettingImg(userID) {
-                let jokeImg = document.getElementById("joke")
-                let info = document.getElementById("imgInfo")
-                return fetch("https://getxkcd.vercel.app/api/comic?num="+userID)
-                .then(resp => {return resp.json();})
-                .then(data =>{
-                    jokeImg.src = data.img;
-                    jokeImg.alt = data.alt;
-                    jokeImg.title = data.title;
-                    date = new Date(Date.UTC(data.year, data.month, data.day, 0, 0));
-                    info.textContent = jokeImg.title + " "+ date.toLocaleDateString();
-        })
-            }
-            function fetchIdentifier(type) {
-                const params = new URLSearchParams();
-                if (type) {
-                    params.append('email', type);
-                }
-                return fetch('https://fwd.innopolis.app/api/hw2?' + params.toString())
-                    .then(r => {return r.text();})
-                    .then(text => {
-                        return gettingImg(text);
-                    })
-                    .catch(() => console.log("Error!"));
-              }
-            const jsonobj = fetchIdentifier("d.melnikava@innopolis.university");
-        </script>
 </body>
 </html>

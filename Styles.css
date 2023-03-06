@@ -103,7 +103,7 @@ header
 .jokeImg figcaption
 {
     color: aliceblue;
-    text-align: center;
+    margin-right: 20%;
     float: right;
     font-family: Snell Roundhand, cursive;
 }
