@@ -1,0 +1,109 @@
+body{ 
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614430882_54-p-krasivii-fon-dlya-teksta-temnii-64.jpg);
+}
+header
+{
+    width: 100%; 
+    background-color:dimgrey; 
+    margin-bottom: 20 px; 
+    background-image: url(https://phonoteka.org/uploads/posts/2021-10/1633103130_11-phonoteka-org-p-fon-belii-mramor-v-khoroshem-kachestve-kra-13.jpg)
+}
+.logo p
+{
+    color:azure;
+    float:left;
+    font-style:italic;
+    font-size: 150;
+    margin-left: 3%;
+    text-align: "justify";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo h1
+{
+    color:rgb(255, 255, 255);
+    font: 250 px;
+    font-style: italic;
+    background: rgba(79, 75, 75, 0.974);
+    text-shadow: 1650 px 50 px 1 px #000;
+    text-align: center;
+    font-family: Trattatello, fantasy
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.logo a
+{
+    display: block;
+    margin-left: 15 px;
+    margin-top: 10 px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo img
+{
+    display: block;
+    margin-left: 45%;
+    margin-right: auto 
+}
+.menu
+{
+    list-style-type: none;
+    float: center;
+    text-align: center;
+}
+.menu li a
+{
+    display: inline-block;
+    box-shadow: -30px 0 0 rgb(255, 255, 255), 30px 0 0 rgb(255, 255, 255);
+    line-height: 10px;
+    width: 171 px;
+    text-decoration: none;
+    font-family: Snell Roundhand, cursive;
+    list-style: none;
+    float: none;
+    font-size: 17 px;
+    color:aliceblue;
+    height: 55 px;
+    cursor: pointer;
+    text-align: center;
+}
+.photo
+{
+    padding-left: 20%;
+    padding-top: 5%;
+}
+.round 
+{
+    shape-image-threshold: 100;
+    border-radius: 100%;
+    border: 3px  rgb(255, 255, 255);
+    box-shadow: 0 0 13px #fcfcfc;
+}
+.bio
+{
+    padding-left: 43%;
+    margin-top: -20%;
+    color: aliceblue;
+}
+.social_networks
+{
+    padding-left: 15%;
+    margin-top: -6%;
+    color: aliceblue;
+    font-family: Snell Roundhand, cursive;
+}
+.jokeImg
+{
+    width: 27%;
+    height: 22%;
+    padding-left: 43%;
+}
+.jokeImg figcaption
+{
+    color: aliceblue;
+    margin-right: 20%;
+    float: right;
+    font-family: Snell Roundhand, cursive;
+}
